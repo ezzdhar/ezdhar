@@ -1197,9 +1197,23 @@
         });
 
         /* ── bg-circles Visibility Management ── */
-        // Initialize based on current scroll position
         const updateOrbs = (isActive) => {
-            gsap.to(".bg-circles", { opacity: isActive ? 1 : 0, duration: 0.8 });
+            gsap.to(".bg-circles", { 
+                opacity: isActive ? 1 : 0, 
+                duration: 0.8,
+                display: isActive ? 'block' : 'none'
+            });
+        };
+
+        // Initially show orbs if in Hero or Services
+        const checkInitialVisibility = () => {
+            const hero = document.querySelector('.hero');
+            const services = document.querySelector('.services-section');
+            if (ScrollTrigger.isInViewport(hero) || ScrollTrigger.isInViewport(services)) {
+                updateOrbs(true);
+            } else {
+                updateOrbs(false);
+            }
         };
 
         // Show in Hero
@@ -1207,7 +1221,14 @@
             trigger: ".hero",
             start: "top top",
             end: "bottom center",
-            onToggle: self => { if (self.isActive) updateOrbs(true); else if (!ScrollTrigger.isInViewport(".services-section")) updateOrbs(false); }
+            onEnter: () => updateOrbs(true),
+            onEnterBack: () => updateOrbs(true),
+            onLeave: () => {
+                if (!ScrollTrigger.isInViewport(".services-section")) updateOrbs(false);
+            },
+            onLeaveBack: () => {
+                if (!ScrollTrigger.isInViewport(".services-section")) updateOrbs(false);
+            }
         });
 
         // Show in Services Section
@@ -1215,10 +1236,20 @@
             trigger: ".services-section",
             start: "top center",
             end: "bottom center",
-            onToggle: self => { if (self.isActive) updateOrbs(true); else if (!ScrollTrigger.isInViewport(".hero")) updateOrbs(false); }
+            onEnter: () => updateOrbs(true),
+            onEnterBack: () => updateOrbs(true),
+            onLeave: () => {
+                if (!ScrollTrigger.isInViewport(".hero")) updateOrbs(false);
+            },
+            onLeaveBack: () => {
+                if (!ScrollTrigger.isInViewport(".hero")) updateOrbs(false);
+            }
         });
 
-        window.addEventListener('load', initMarquee);
+        window.addEventListener('load', () => {
+            initMarquee();
+            checkInitialVisibility();
+        });
     </script>
     <div class="bg-circles">
         <div class="orb orb-1"></div>

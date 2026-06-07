@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezdhar - Build Digital Products That Drive Growth</title>
+    <meta name="description"
+        content="Ezdhar delivers modern digital solutions designed to help startups, businesses, and brands grow faster in the digital world.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+</head>
+
+<body>
+    <!-- bg-circles moved to the end -->
+
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">
+                <img src="imges/logo1.png" alt="Ezdhar Logo">
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="services.html" class="nav-link">Our Services</a>
+                <a href="contact-us.html" class="nav-link">Contact Us</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="vertical-divider"></div>
+                <a href="contact-us.html" class="btn btn-outline">Get A Free Quote</a>
+            </div>
+            <div class="mobile-menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Professional Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay">
+        <div class="overlay-header">
+            <div class="logo">
+                <img src="imges/logo1.png" alt="Ezdhar Logo">
+            </div>
+            <button class="close-menu" id="closeMenu">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="services.html" class="mobile-nav-link">Our Services</a>
+            <a href="contact-us.html" class="mobile-nav-link">Contact Us</a>
+            <a href="contact-us.html" class="mobile-nav-link quote-btn">Get A Free Quote</a>
+        </nav>
+        <div class="overlay-footer">
+            <div class="social-links">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <p>© 2026 Ezdhar Company</p>
+        </div>
+    </div>
+
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">Build Digital Products That Drive Growth</h1>
+            <p class="hero-description">
+                Ezdhar delivers modern digital solutions designed to help
+                startups, businesses, and brands grow faster in the digital world.
+                From idea to launch — we create websites, mobile apps,
+                eCommerce platforms, UI/UX designs, and scalable cloud
+                solutions tailored to your business goals.
+            </p>
+            <div class="hero-btns">
+                <a href="contact-us.html" class="btn btn-primary">Start Your Project</a>
+                <a href="services.html" class="btn btn-outline">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SECTION 2 — Your Technology Partners
+    ═══════════════════════════════════════════ -->
+    <section class="tech-partners" id="tech-partners">
+        <!-- Background Layer -->
+        <div class="tp-bg-layer"></div>
+
+        <!-- Animated Vector Circle -->
+        <div class="tp-vector-wrapper">
+            <div class="tp-vector-circle">
+                <img src="imges/Vector (3).png" alt="Vector Art" class="tp-vector-img">
+            </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="tp-content">
+            <h2 class="tp-title-main">Your Technology Partners</h2>
+            <p class="tp-title-outline">For Modern Business</p>
+            <p class="tp-description">
+                At Ezdhar, we combine creativity, strategy, and technology to build powerful digital experiences.<br>
+                Our team focuses on performance, user experience, scalability, and clean modern design to help
+                businesses succeed online.
+            </p>
+        </div>
+        <!-- Section Border Animation -->
+        <div class="section-border-anim">
+            <svg class="section-border-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <rect class="section-border-rect" x="1" y="1" width="98" height="98" />
+            </svg>
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+         SECTION 3 — Modern Digital Solutions
+    ═══════════════════════════════════════════ -->
+    <section class="services-section" id="services">
+        <!-- Animated Stars -->
+        <div class="stars-container" id="starsCanvas"></div>
+
+        <div class="services-container">
+            <!-- Titles Area -->
+            <div class="srv-headings">
+                <div class="srv-heading-main">
+                    <span class="c-white">Modern Digital</span>
+                </div>
+                <div class="srv-heading-sub">
+                    <div class="sub-left c-white">Solutions For</div>
+                    <div class="sub-right c-white">Growing Brands</div>
+                </div>
+            </div>
+
+            <!-- Hexagons / Circles Graphic Area -->
+            <div class="srv-graphic">
+                <img src="imges/Group 6356199 (2).png" alt="Services" class="srv-circles-img">
+            </div>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════════════════
+         SECTION 8: CALL TO ACTION (CTA)
+         ═══════════════════════════════════════════ -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2 class="cta-title">
+                    <span class="line-1">Let's <span class="highlight">Create</span></span>
+                    <span class="line-2">Something <span class="highlight">Great</span></span>
+                </h2>
+                <p class="cta-subtitle">We Shift You From Todays Reality To Tomorrows Potential, Ensuring</p>
+            </div>
+            <div class="cta-action">
+                <a href="#" class="cta-circle-btn">
+                    <div class="cta-btn-inner">
+                        <span class="cta-btn-text">Lets Talk <i class="bi bi-arrow-up-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════════════════
+         SECTION 9: SCROLLING MARQUEE (TICKER)
+         ═══════════════════════════════════════════ -->
+    <section class="marquee-section">
+        <!-- Track 1: Moving left -->
+        <div class="marquee-track ticker-left">
+            <div class="marquee-content">
+                <span>Web Development / </span>
+                <span>Cloud Services / </span>
+                <span>E-Commerce / </span>
+                <span>Mobile Apps / </span>
+                <span>CMS Solutions / </span>
+                <span>UI/UX Design / </span>
+                <!-- Duplicate for seamless loop -->
+                <span>Web Development / </span>
+                <span>Cloud Services / </span>
+                <span>E-Commerce / </span>
+                <span>Mobile Apps / </span>
+                <span>CMS Solutions / </span>
+                <span>UI/UX Design / </span>
+            </div>
+        </div>
+
+        <!-- Track 2: Moving right -->
+        <div class="marquee-track ticker-right">
+            <div class="marquee-content">
+                <span>Website Design / </span>
+                <span>Brand Identity / </span>
+                <span>Digital Strategy / </span>
+                <span>SEO Mastery / </span>
+                <span>Product Design / </span>
+                <span>App Development / </span>
+                <!-- Duplicate for seamless loop -->
+                <span>Website Design / </span>
+                <span>Brand Identity / </span>
+                <span>Digital Strategy / </span>
+                <span>SEO Mastery / </span>
+                <span>Product Design / </span>
+                <span>App Development / </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 4: WORKFLOW (HOW WE WORK)
+         ═══════════════════════════════════════════ -->
+    <section class="workflow-section" id="workflow">
+        <div class="container">
+            <!-- Header -->
+            <div class="workflow-header">
+                <span class="wf-outline-title">WORK FLOW</span>
+                <h2 class="wf-main-title">HOW WE WORK</h2>
+            </div>
+
+            <!-- Steps -->
+            <div class="workflow-steps">
+
+                <!-- Step 1 -->
+                <div class="wf-step">
+                    <div class="wf-step-top">
+                        <div class="wf-icon-box">
+                            <img src="imges/Frame 2147225476.png" alt="Research" class="wf-icon">
+                        </div>
+                        <div class="wf-divider"></div>
+                        <div class="wf-number">
+                            <img src="imges/01 (1).png" alt="01">
+                        </div>
+                    </div>
+                    <div class="wf-step-bottom">
+                        <h3 class="wf-step-name">Research and Strategy</h3>
+                        <p class="wf-step-desc">Conduct thorough market research of the target audience
+                            behaviors.<br>Submit as many design tasks</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="wf-step">
+                    <div class="wf-step-top">
+                        <div class="wf-icon-box">
+                            <img src="imges/Frame 2147225421 (2).png" alt="Plan" class="wf-icon">
+                        </div>
+                        <div class="wf-divider"></div>
+                        <div class="wf-number">
+                            <img src="imges/02 (1).png" alt="02">
+                        </div>
+                    </div>
+                    <div class="wf-step-bottom">
+                        <h3 class="wf-step-name">Plan Customization</h3>
+                        <p class="wf-step-desc">Conduct thorough market research of the target audience
+                            behaviors.<br>Submit as many design tasks</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="wf-step">
+                    <div class="wf-step-top">
+                        <div class="wf-icon-box">
+                            <img src="imges/Frame 2147225477.png" alt="Finished" class="wf-icon">
+                        </div>
+                        <div class="wf-divider"></div>
+                        <div class="wf-number">
+                            <img src="imges/03 (1).png" alt="03">
+                        </div>
+                    </div>
+                    <div class="wf-step-bottom">
+                        <h3 class="wf-step-name">Finished & User Testing</h3>
+                        <p class="wf-step-desc">Conduct thorough market research of the target audience
+                            behaviors.<br>Submit as many design tasks</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Section Border Animation -->
+        <div class="section-border-anim">
+            <!-- <svg class="section-border-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <rect class="section-border-rect" x="1" y="1" width="98" height="98" />
+            </svg> -->
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 5: CREATIVE SERVICES
+         ═══════════════════════════════════════════ -->
+    <section class="creative-services-section">
+        <div class="container">
+            <div class="cs-content">
+                <h2 class="cs-title">
+                    We Creative Best High Services <br>
+                    & Bold Solutions For Your <br>
+                    Business <span class="cs-outline">Growth</span>
+                </h2>
+                <div class="cs-btn-wrap">
+                    <a href="#services" class="cs-btn">Explore Services</a>
+                </div>
+            </div>
+
+            <!-- Background Vector -->
+            <div class="cs-vector-wrapper">
+                <div class="cs-vector-circle">
+                    <img src="imges/Vector (4).png" alt="Vector Art" class="cs-vector-img">
+                </div>
+            </div>
+
+            <!-- Background Glow -->
+            <div class="cs-bg-glow"></div>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════════════════
+         SECTION 7: TRANSFORM (OLD SECTION 6) ─ Renumbered for clarity
+         ═══════════════════════════════════════════ -->
+    <section class="transform-section">
+        <div class="transform-overlay"></div>
+        <div class="container transform-container">
+            <div class="transform-content">
+                <h2 class="transform-title">Transform Your Ideas Into<br>Digital Success</h2>
+                <p class="transform-subtitle">
+                    From websites and mobile apps to cloud solutions and e-commerce platforms, Ezdhar<br>
+                    helps businesses build powerful digital products that drive growth and innovation.
+                </p>
+                <div class="transform-btn-wrap">
+                    <a href="#contact" class="transform-btn">Book A Free Consultation</a>
+                </div>
+            </div>
+        </div>
+        <!-- Section Border Animation -->
+        <div class="section-border-anim">
+            <svg class="section-border-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <rect class="section-border-rect" x="1" y="1" width="98" height="98" />
+            </svg>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════════════════
+         SECTION 7: WHY CHOOSE EZDHAR
+         ═══════════════════════════════════════════ -->
+    <section class="why-section" id="why-us">
+        <div class="container">
+            <!-- Header -->
+            <div class="why-header">
+                <span class="why-outline-title">WHY US ?</span>
+                <h2 class="why-main-title">Why Choose Ezdhar?</h2>
+                <p class="why-subtitle">Ezdhar delivers innovative digital solutions with a focus on quality,
+                    performance, and user experience. We help businesses turn ideas into scalable and successful digital
+                    products.</p>
+            </div>
+
+            <!-- Grid -->
+            <div class="why-grid">
+
+                <!-- Left Column -->
+                <div class="why-col why-col--left">
+                    <div class="why-card">
+                        <div class="why-card-icon"><img src="imges/image 40.png" alt="Scalable Solutions"></div>
+                        <h3 class="why-card-title">Scalable Solutions</h3>
+                        <p class="why-card-desc">Our systems are designed to grow with your business.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-card-icon"><img src="imges/image 42.png" alt="Dedicated Support"></div>
+                        <h3 class="why-card-title">Dedicated Support</h3>
+                        <p class="why-card-desc">We provide continuous support and long-term partnership.</p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="why-col why-col--right">
+                    <div class="why-card">
+                        <div class="why-card-icon"><img src="imges/image 39.png" alt="Creative Designs"></div>
+                        <h3 class="why-card-title">Creative & Modern Designs</h3>
+                        <p class="why-card-desc">We build visually engaging products with clean modern interfaces.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-card-icon"><img src="imges/image 41.png" alt="Fast Performance"></div>
+                        <h3 class="why-card-title">Fast Performance</h3>
+                        <p class="why-card-desc">Optimized speed and performance across all platforms.</p>
+                    </div>
+                    <div class="why-card why-card--last">
+                        <div class="why-card-icon"><img src="imges/image 43.png" alt="Business-Focused Approach"></div>
+                        <h3 class="why-card-title">Business-Focused Approach</h3>
+                        <p class="why-card-desc">Every solution is built to help you achieve measurable business goals.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Removed section-wide border animation as requested -->
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 6: OUR TEAM (MEET EXPERTS)
+         ═══════════════════════════════════════════ -->
+    <section class="team-section" id="team">
+        <div class="team-bg-glow">
+            <img src="imges/Section 40.png" alt="Background Glow">
+        </div>
+
+        <div class="container">
+            <!-- Header -->
+            <div class="team-header">
+                <span class="team-bg-title">OUR TEAM</span>
+                <h2 class="team-main-title">Meet The Experts Behind Ezdhar</h2>
+                <p class="team-desc">
+                    The talented minds behind Ezdhar. Our team of designers, developers, and digital experts work
+                    together to create innovative solutions that help businesses grow and succeed.
+                </p>
+            </div>
+
+            <!-- Team Slider -->
+            <div class="team-slider-outer">
+                <div class="team-track">
+                    <!-- Member 1 -->
+                    <div class="team-card">
+                        <div class="team-card-inner">
+                            <div class="team-info">
+                                <h3 class="member-name">Sarah Mohamed</h3>
+                                <p class="member-role">Founder & CEO</p>
+                            </div>
+                            <div class="member-img-wrap">
+                                <img src="imges/Frame 2147225468.png" alt="Team Member">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 2 (Active Style) -->
+                    <div class="team-card active">
+                        <div class="team-card-inner">
+                            <div class="team-info">
+                                <h3 class="member-name">Sarah Mohamed</h3>
+                                <p class="member-role">Founder & CEO</p>
+                                <p class="member-bio">Leading digital innovation and business growth strategies.</p>
+                            </div>
+                            <div class="member-img-wrap">
+                                <img src="imges/Frame 2147225467.png" alt="Team Member">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="team-card">
+                        <div class="team-card-inner">
+                            <div class="team-info">
+                                <h3 class="member-name">Sarah Mohamed</h3>
+                                <p class="member-role">Founder & CEO</p>
+                            </div>
+                            <div class="member-img-wrap">
+                                <img src="imges/Frame 2147225468.png" alt="Team Member">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicates for seamless loop if needed, or I'll handle with JS -->
+                </div>
+            </div>
+
+            <!-- Slider Nav -->
+            <div class="team-nav">
+                <button class="team-nav-btn prev" id="teamPrev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M5 12L12 19M5 12L12 5" />
+                    </svg>
+                </button>
+                <button class="team-nav-btn next" id="teamNext">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Bottom Divider -->
+    <div class="services-divider"></div>
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER SECTION
+         ═══════════════════════════════════════════ -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+
+            <!-- Top CTA Row -->
+            <div class="footer-cta">
+                <h2 class="footer-cta-title">
+                    Discover how Ezdhar can help you build <span class="muted-text">innovative digital solutions that
+                        accelerate growth.</span>
+                </h2>
+                <div class="footer-cta-action">
+                    <a href="#" class="btn-demo">
+                        Book A Demo
+                        <span class="arrow-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main Links Grid -->
+            <div class="footer-grid">
+                <!-- Branding Column -->
+                <div class="f-col branding-col">
+                    <h3 class="f-heading">EZDHAR</h3>
+                    <p class="f-text">
+                        Delivering innovative web, mobile, cloud, and e-commerce solutions that help businesses grow,
+                        scale, and succeed in the digital world.
+                    </p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="f-col links-col">
+                    <h3 class="f-heading">Quick Links</h3>
+                    <ul class="f-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="f-col contact-col">
+                    <h3 class="f-heading">Get In Touch</h3>
+                    <ul class="f-contact-list">
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:info@ezzdhar.com">info@ezzdhar.com</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:+201227790014">+20 12 27790014</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            <span>Cairo, Egypt, New Damietta</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© 2026 Ezdhar Company. All Rights Reserved.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><img src="imges/Group (25).png" alt=""></a>
+                    <a href="#"><img src="imges/Group (24).png" alt=""></a>
+                    <a href="#"><img src="imges/Group (23).png" alt=""></a>
+                    <a href="#"><img src="imges/Group (26).png" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        /* ── Professional Mobile Sidebar Menu Logic ── */
+        const menuToggle = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        menuToggle.addEventListener('click', () => {
+            mobileOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+
+        const hideMenu = () => {
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        closeMenu.addEventListener('click', hideMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', hideMenu));
+
+
+        /* ── Subtle Mouse Parallax Only ── */
+        const W = window.innerWidth;
+        const H = window.innerHeight;
+        document.addEventListener("mousemove", (e) => {
+            const moveX = (e.clientX - W / 2) * 0.02;
+            const moveY = (e.clientY - H / 2) * 0.02;
+            document.querySelectorAll(".orb").forEach((orb, i) => {
+                const depth = 1 + i * 0.5;
+                gsap.to(orb, {
+                    x: moveX * depth,
+                    y: moveY * depth,
+                    duration: 2,
+                    ease: "power2.out"
+                });
+            });
+        });
+
+        /* ── GSAP Animations ── */
+        gsap.registerPlugin(ScrollTrigger, TextPlugin);
+
+        // Section 2 Circle Animation: Move from right to left
+        gsap.fromTo(".tp-vector-wrapper",
+            {
+                x: "100vw",
+                opacity: 0,
+                rotate: 180
+            },
+            {
+                x: 0,
+                opacity: 1,
+                rotate: 0,
+                duration: 2,
+                ease: "power4.out",
+                scrollTrigger: {
+                    trigger: ".tech-partners",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                },
+                onComplete: () => {
+                    // Continuous professional pulse animation
+                    gsap.to(".tp-vector-img", {
+                        scale: 1.05,
+                        duration: 2,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut"
+                    });
+                    // Subtle floating movement
+                    gsap.to(".tp-vector-circle", {
+                        y: "-=15",
+                        duration: 3,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut"
+                    });
+                }
+            }
+        );
+
+        // Hover Effect for Circle
+        const circle = document.querySelector('.tp-vector-circle');
+        if (circle) {
+            circle.addEventListener('mousemove', (e) => {
+                const { left, top, width, height } = circle.getBoundingClientRect();
+                const x = (e.clientX - left - width / 2) * 0.2;
+                const y = (e.clientY - top - height / 2) * 0.2;
+                gsap.to(circle, { x, y, duration: 0.4, ease: "power2.out" });
+            });
+            circle.addEventListener('mouseleave', () => {
+                gsap.to(circle, { x: 0, y: 0, duration: 0.6, ease: "elastic.out(1, 0.3)" });
+            });
+        }
+
+        // Text Content Animation: Professional Fade-up 
+        gsap.from(".tp-title-main", {
+            y: 60,
+            opacity: 0,
+            duration: 1.2,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".tech-partners",
+                start: "top 75%"
+            }
+        });
+
+        gsap.from(".tp-title-outline", {
+            x: 150,
+            opacity: 0,
+            duration: 1.2,
+            delay: 0.2,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".tech-partners",
+                start: "top 75%"
+            }
+        });
+
+        gsap.from(".tp-description", {
+            y: 40,
+            opacity: 0,
+            duration: 1.2,
+            delay: 0.4,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".tech-partners",
+                start: "top 75%"
+            }
+        });
+
+        /* ── Section 3: Stars JS with Drift ── */
+        (function () {
+            const canvas = document.getElementById('starsCanvas');
+            if (!canvas) return;
+            for (let i = 0; i < 75; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'star-dot';
+                dot.style.left = Math.random() * 100 + '%';
+                dot.style.top = Math.random() * 100 + '%';
+
+                // Random drift values
+                const driftX = (Math.random() - 0.5) * 80;
+                const driftY = (Math.random() - 0.5) * 80;
+                dot.style.setProperty('--dx', driftX + 'px');
+                dot.style.setProperty('--dy', driftY + 'px');
+
+                // Faster stars: 2s to 5s
+                dot.style.setProperty('--dur', (2 + Math.random() * 3) + 's');
+                dot.style.setProperty('--delay', (Math.random() * 4) + 's');
+
+                const sz = (1 + Math.random() * 2).toFixed(1) + 'px';
+                dot.style.width = sz;
+                dot.style.height = sz;
+                canvas.appendChild(dot);
+            }
+        })();
+
+        /* ── Section 3: Services Sequential Pulse (Strong Liquid Wave) ── */
+        const hexGlows = document.querySelectorAll('.hex-glow-overlay');
+        const glowTL = gsap.timeline({ repeat: -1 });
+
+        hexGlows.forEach((glow) => {
+            glowTL.to(glow, {
+                opacity: 1, // Max opacity
+                scale: 1.5, // Larger impact
+                duration: 0.8,
+                ease: "sine.inOut"
+            })
+                .to(glow, {
+                    opacity: 0.1,
+                    scale: 0.7,
+                    duration: 1,
+                    ease: "sine.inOut"
+                }, "-=0.4"); // Continuous wave
+        });
+
+        /* ── Section 3: Titles Animations ── */
+        gsap.from(".srv-title-center", {
+            y: -60, opacity: 0, duration: 1.2, ease: "power3.out",
+            scrollTrigger: { trigger: ".services-section", start: "top 70%" }
+        });
+
+        gsap.from(".srv-title-left", {
+            x: -150, opacity: 0, duration: 1.4, ease: "power4.out",
+            scrollTrigger: { trigger: ".services-section", start: "top 70%" }
+        });
+
+        gsap.from(".srv-title-right", {
+            x: 150, opacity: 0, duration: 1.4, ease: "power4.out",
+            scrollTrigger: { trigger: ".services-section", start: "top 70%" }
+        });
+
+        /* ── Section 3: Hex Grid Stagger ── */
+        gsap.from(".hex-item", {
+            scale: 0,
+            opacity: 0,
+            y: 50,
+            rotate: 15,
+            duration: 1,
+            stagger: {
+                each: 0.1,
+                from: "center"
+            },
+            ease: "back.out(1.7)",
+            scrollTrigger: {
+                trigger: ".hex-grid-container",
+                start: "top 80%"
+            }
+        });
+
+        // Floating effect for the whole grid
+        gsap.to(".hex-grid-container", {
+            y: "-=15",
+            duration: 3,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+        });
+
+        /* ── Section 4: CTA Animations ── */
+        gsap.from(".cta-title .line-1, .cta-title .line-2", {
+            y: 100,
+            opacity: 0,
+            stagger: 0.2,
+            duration: 1.2,
+            ease: "power4.out",
+            scrollTrigger: {
+                trigger: ".cta-section",
+                start: "top 80%"
+            }
+        });
+
+        gsap.from(".cta-subtitle", {
+            opacity: 0,
+            y: 30,
+            duration: 1,
+            delay: 0.5,
+            scrollTrigger: {
+                trigger: ".cta-section",
+                start: "top 80%"
+            }
+        });
+
+        gsap.from(".cta-circle-btn", {
+            scale: 0,
+            opacity: 0,
+            rotate: -45,
+            duration: 1.5,
+            ease: "back.out(1.7)",
+            scrollTrigger: {
+                trigger: ".cta-section",
+                start: "top 80%"
+            }
+        });
+
+        // Continuous Floating for CTA Button
+        gsap.to(".cta-circle-btn", {
+            y: -15,
+            duration: 2,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+        });
+
+        /* ── Section 3: Hex Grid Stagger ── */
+        gsap.from(".hex-item", {
+            scale: 0,
+            opacity: 0,
+            y: 50,
+            rotate: 15,
+            duration: 1,
+            stagger: {
+                each: 0.1,
+                from: "center"
+            },
+            ease: "back.out(1.7)",
+            scrollTrigger: {
+                trigger: ".hex-grid-container",
+                start: "top 80%"
+            }
+        });
+
+        // Floating effect for the whole grid
+        gsap.to(".hex-grid-container", {
+            y: "-=15",
+            duration: 3,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+        });
+
+        gsap.from(".featured-in", {
+            y: 50, opacity: 0, duration: 1,
+            scrollTrigger: { trigger: ".featured-in", start: "top 95%" }
+        });
+
+        gsap.to(".featured-img", {
+            y: -8, duration: 2.5, repeat: -1, yoyo: true, ease: "sine.inOut"
+        });
+        /* ── Section 5: Robust Infinite Marquee ── */
+        function horizontalLoop(items, config) {
+            items = gsap.utils.toArray(items);
+            config = config || {};
+            let tl = gsap.timeline({ repeat: config.repeat, paused: config.paused, defaults: { ease: "none" }, onReverseComplete: () => tl.totalTime(tl.rawTime() + tl.duration() * 100) }),
+                length = items.length,
+                startX = items[0].offsetLeft,
+                times = [],
+                widths = [],
+                xPercents = [],
+                curIndex = 0,
+                pixelsPerSecond = (config.speed || 1) * 100,
+                snap = config.snap === false ? v => v : gsap.utils.snap(config.snap || 1),
+                totalWidth, curX, distanceToStart, distanceToLoop, item, i;
+            gsap.set(items, {
+                xPercent: (i, target) => {
+                    let w = widths[i] = parseFloat(gsap.getProperty(target, "width", "px"));
+                    xPercents[i] = snap(parseFloat(gsap.getProperty(target, "xPercent")) / 100 * w + gsap.getProperty(target, "x"));
+                    return 0;
+                }
+            });
+            gsap.set(items, { x: 0 });
+            totalWidth = items[length - 1].offsetLeft + xPercents[length - 1] / 100 * widths[length - 1] - startX + items[length - 1].offsetWidth * gsap.getProperty(items[length - 1], "scaleX") + (parseFloat(config.paddingRight) || 0);
+            for (i = 0; i < length; i++) {
+                item = items[i];
+                curX = xPercents[i] / 100 * widths[i];
+                distanceToStart = item.offsetLeft - startX;
+                distanceToLoop = distanceToStart + widths[i] * gsap.getProperty(item, "scaleX");
+                tl.to(item, { xPercent: snap((curX - distanceToLoop) / widths[i] * 100), duration: distanceToLoop / pixelsPerSecond }, 0)
+                    .fromTo(item, { xPercent: snap((curX - distanceToLoop + totalWidth) / widths[i] * 100) }, { xPercent: snap(curX / widths[i] * 100), duration: (curX - distanceToLoop + totalWidth) / pixelsPerSecond, immediateRender: false }, distanceToLoop / pixelsPerSecond)
+                    .add("label" + i, distanceToStart / pixelsPerSecond);
+                times[i] = distanceToStart / pixelsPerSecond;
+            }
+            function toIndex(index, vars) {
+                vars = vars || {};
+                (Math.abs(index - curIndex) > length / 2) && (index += index > curIndex ? -length : length);
+                let newIndex = gsap.utils.wrap(0, length, index),
+                    time = times[newIndex];
+                if (time > tl.time() !== index > curIndex) {
+                    vars.modifiers = { time: gsap.utils.wrap(0, tl.duration()) };
+                    time += tl.duration() * (index > curIndex ? 1 : -1);
+                }
+                curIndex = newIndex;
+                vars.overwrite = true;
+                return tl.tweenTo(time, vars);
+            }
+            tl.next = vars => toIndex(curIndex + 1, vars);
+            tl.prev = vars => toIndex(curIndex - 1, vars);
+            tl.current = () => curIndex;
+            tl.toIndex = (index, vars) => toIndex(index, vars);
+            tl.times = times;
+            tl.progress(1, true).progress(0, true);
+            if (config.reversed) {
+                tl.vars.onReverseComplete();
+                tl.reverse();
+            }
+            return tl;
+        }
+
+        const initMarquee = () => {
+            const lines = document.querySelectorAll(".marquee-track");
+            lines.forEach((line, i) => {
+                const links = line.querySelectorAll("span");
+                const loop = horizontalLoop(links, {
+                    repeat: -1,
+                    speed: 3 + i,
+                    reversed: i % 2 !== 0,
+                    paddingRight: 0 // Using CSS padding now for stability
+                });
+
+                // Interaction
+                window.addEventListener("scroll", () => {
+                    gsap.to(loop, { timeScale: 4, duration: 0.2, onComplete: () => gsap.to(loop, { timeScale: 1, duration: 1 }) });
+                });
+            });
+        };
+
+        // Initialize after everything (fonts, layout) is ready
+        /* ── Section 4: Workflow Animations ── */
+        gsap.to(".wf-step", {
+            scrollTrigger: {
+                trigger: ".workflow-section",
+                start: "top 70%",
+            },
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out"
+        });
+
+        /* ── Section 5: Creative Services Animations ── */
+        gsap.fromTo(".cs-vector-wrapper",
+            {
+                x: "-100vw",
+                opacity: 0,
+                rotate: -180
+            },
+            {
+                x: 0,
+                opacity: 0.3,
+                rotate: 0,
+                duration: 2.5,
+                ease: "power4.out",
+                scrollTrigger: {
+                    trigger: ".creative-services-section",
+                    start: "top 70%",
+                },
+                onComplete: () => {
+                    gsap.to(".cs-vector-img", {
+                        scale: 1.05,
+                        duration: 2,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut"
+                    });
+                    gsap.to(".cs-vector-circle", {
+                        y: "-=15",
+                        duration: 3,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut"
+                    });
+                }
+            }
+        );
+
+        gsap.from(".cs-content", {
+            scrollTrigger: {
+                trigger: ".creative-services-section",
+                start: "top 75%",
+            },
+            opacity: 0,
+            y: 50,
+            duration: 1.2,
+            ease: "power3.out"
+        });
+
+
+
+        gsap.to(".cs-bg-glow", {
+            x: "random(-100, 100)",
+            y: "random(-100, 100)",
+            duration: 15,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+        });
+
+        /* ── Section Border: Draw → Fade (All Sections) ── */
+        document.querySelectorAll(".section-border-anim, .why-border-anim").forEach(function (borderEl) {
+            const rect = borderEl.querySelector(".section-border-rect, .why-border-rect");
+            if (!rect) return;
+
+            const section = borderEl.closest("section");
+
+            ScrollTrigger.create({
+                trigger: section,
+                start: "top 75%",
+                once: false,
+                onEnter: () => {
+                    const tl = gsap.timeline();
+                    tl.set(borderEl, { opacity: 1 })
+                        .fromTo(rect,
+                            { strokeDashoffset: 5000 },
+                            { strokeDashoffset: 0, duration: 2.5, ease: "power2.inOut" }
+                        )
+                        .to(borderEl, { opacity: 0, duration: 1, ease: "power2.in" }, "+=0.4");
+                }
+            });
+        });
+
+        /* ── Section 6: Our Team Slider & Entrance ── */
+        gsap.from(".team-header", {
+            scrollTrigger: { trigger: ".team-section", start: "top 75%" },
+            opacity: 0, y: 30, duration: 1.2, ease: "power3.out"
+        });
+
+        const teamCards = gsap.utils.toArray(".team-card");
+        const teamLoop = horizontalLoop(teamCards, {
+            repeat: -1,
+            speed: 1,
+            paddingRight: 30,
+            draggable: true
+        });
+
+        // Navigation
+        document.getElementById("teamNext").addEventListener("click", () => teamLoop.next({ duration: 1, ease: "power2.inOut" }));
+        document.getElementById("teamPrev").addEventListener("click", () => teamLoop.previous({ duration: 1, ease: "power2.inOut" }));
+
+        // Update active class on transition complete (Subtle touch)
+        teamLoop.eventCallback("onUpdate", () => {
+            const current = teamLoop.current();
+            teamCards.forEach((c, i) => {
+                c.classList.toggle("active", i === current);
+            });
+        });
+
+        /* ── Section 7: Why Cards stagger ── */
+        gsap.from(".why-header", {
+            scrollTrigger: { trigger: ".why-section", start: "top 75%" },
+            opacity: 0, y: 40, duration: 1, ease: "power3.out"
+        });
+
+        gsap.from(".why-card", {
+            scrollTrigger: {
+                trigger: ".why-grid",
+                start: "top 85%"
+            },
+            opacity: 0,
+            y: 40,
+            duration: 1,
+            stagger: 0.3,
+            ease: "power2.out"
+        });
+
+        /* ── Footer Animations ── */
+        const fTitle = document.querySelector(".footer-cta-title");
+        // Split text into characters while preserving HTML
+        const splitText = (el) => {
+            const content = el.innerHTML;
+            let result = "";
+            let inTag = false;
+            for (let char of content) {
+                if (char === "<") inTag = true;
+                if (char === ">") {
+                    inTag = false;
+                    result += char;
+                    continue;
+                }
+                if (inTag) {
+                    result += char;
+                } else {
+                    result += `<span class="char" style="opacity:0">${char}</span>`;
+                }
+            }
+            el.innerHTML = result;
+        };
+
+        splitText(fTitle);
+
+        ScrollTrigger.create({
+            trigger: ".main-footer",
+            start: "top 85%",
+            onEnter: () => {
+                gsap.to(".char", {
+                    opacity: 1,
+                    stagger: 0.03,
+                    duration: 0.1,
+                    ease: "none"
+                });
+            }
+        });
+
+        gsap.from(".btn-demo", {
+            scrollTrigger: { trigger: ".main-footer", start: "top 90%" },
+            opacity: 0, x: 50, duration: 1.2, ease: "power3.out", delay: 0.5
+        });
+
+        gsap.from(".f-col", {
+            scrollTrigger: { trigger: ".footer-grid", start: "top 90%" },
+            opacity: 0, y: 30, duration: 1, stagger: 0.2, ease: "power2.out"
+        });
+
+        gsap.from(".footer-bottom", {
+            scrollTrigger: { trigger: ".footer-bottom", start: "top 95%" },
+            opacity: 0, y: 20, duration: 1, ease: "power2.out"
+        });
+
+        /* ── why-section Sequential Card Pulse ── */
+        const whyCards = gsap.utils.toArray('.why-card');
+        const whyTimeline = gsap.timeline({
+            repeat: -1,
+            scrollTrigger: {
+                trigger: '.why-section',
+                start: 'top 60%',
+            }
+        });
+
+        whyCards.forEach((card, index) => {
+            whyTimeline.to(card, {
+                onStart: () => card.classList.add('card-active'),
+                duration: 2, // Duration each card stays active
+                onComplete: () => {
+                    // Start next card slightly before this one finishes if desired, 
+                    // or just keep it simple.
+                    card.classList.remove('card-active');
+                }
+            }, "+=0.2"); // Small gap between cards
+        });
+
+        // Make it repeat infinitely if in view
+        ScrollTrigger.create({
+            trigger: '.why-section',
+            start: 'top 60%',
+            onEnter: () => whyTimeline.play(),
+            onLeave: () => whyTimeline.pause(),
+            onEnterBack: () => whyTimeline.play(),
+            onLeaveBack: () => whyTimeline.pause()
+        });
+
+        /* ── bg-circles Visibility Management ── */
+        // Initialize based on current scroll position
+        const updateOrbs = (isActive) => {
+            gsap.to(".bg-circles", { opacity: isActive ? 1 : 0, duration: 0.8 });
+        };
+
+        // Show in Hero
+        ScrollTrigger.create({
+            trigger: ".hero",
+            start: "top top",
+            end: "bottom center",
+            onToggle: self => { if (self.isActive) updateOrbs(true); else if (!ScrollTrigger.isInViewport(".services-section")) updateOrbs(false); }
+        });
+
+        // Show in Services Section
+        ScrollTrigger.create({
+            trigger: ".services-section",
+            start: "top center",
+            end: "bottom center",
+            onToggle: self => { if (self.isActive) updateOrbs(true); else if (!ScrollTrigger.isInViewport(".hero")) updateOrbs(false); }
+        });
+
+        window.addEventListener('load', initMarquee);
+    </script>
+    <div class="bg-circles">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+</html>

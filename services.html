@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Ezdhar</title>
+    <meta name="description"
+        content="Explore the wide range of digital solutions provided by Ezdhar, from web development to mobile apps and cloud services.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">
+                <img src="imges/logo1.png" alt="Ezdhar Logo">
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link active">Our Services</a>
+                <a href="#" class="nav-link">Contact Us</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="vertical-divider"></div>
+                <a href="#" class="btn btn-outline">Get A Free Quote</a>
+            </div>
+            <div class="mobile-menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Professional Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay">
+        <div class="overlay-header">
+            <div class="logo">
+                <img src="imges/logo1.png" alt="Ezdhar Logo">
+            </div>
+            <button class="close-menu" id="closeMenu">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="services.html" class="mobile-nav-link">Our Services</a>
+            <a href="#" class="mobile-nav-link">Contact Us</a>
+            <a href="#" class="mobile-nav-link quote-btn">Get A Free Quote</a>
+        </nav>
+        <div class="overlay-footer">
+            <div class="social-links">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <p>© 2026 Ezdhar Company</p>
+        </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════
+         SERVICES HERO SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="services-hero">
+        <canvas id="heroCanvas"></canvas>
+        <div class="services-hero-bg"></div>
+        <div class="container sh-container">
+            <h1 class="sh-title">
+                <span class="sh-title-muted">Our</span> Services
+            </h1>
+            <p class="sh-description">
+                We provide complete digital solutions tailored for startups, <br>
+                brands, and growing businesses.
+            </p>
+        </div>
+    </section>
+    <!-- ══════════════════════════════════════════
+         SERVICES GRID SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="services-list-section">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Card 01 -->
+                <div class="s-card">
+                    <div class="s-card-content">
+                        <h3 class="s-card-title">Web Development</h3>
+                        <p class="s-card-desc">Modern, responsive, and high-performance websites designed to elevate
+                            your online presence and deliver exceptional user experiences.</p>
+                    </div>
+                    <div class="s-card-num">
+                        <img src="imges/01 (2).png" alt="01">
+                    </div>
+                </div>
+
+                <!-- Card 02 -->
+                <div class="s-card">
+                    <div class="s-card-content">
+                        <h3 class="s-card-title">Mobile Applications</h3>
+                        <p class="s-card-desc">We create scalable mobile applications for iOS and Android using modern
+                            technologies like Flutter and React Native.</p>
+                    </div>
+                    <div class="s-card-num">
+                        <img src="imges/02 (2).png" alt="02">
+                    </div>
+                </div>
+
+                <!-- Card 03 -->
+                <div class="s-card">
+                    <div class="s-card-content">
+                        <h3 class="s-card-title">UI/UX Design</h3>
+                        <p class="s-card-desc">We design intuitive digital experiences starting from wireframes to
+                            polished modern interfaces that users love.</p>
+                    </div>
+                    <div class="s-card-num">
+                        <img src="imges/03 (2).png" alt="03">
+                    </div>
+                </div>
+
+                <!-- Card 04 -->
+                <div class="s-card">
+                    <div class="s-card-content">
+                        <h3 class="s-card-title">E-Commerce Solutions</h3>
+                        <p class="s-card-desc">Launch powerful online stores with seamless shopping experiences and
+                            custom features tailored to your business.</p>
+                    </div>
+                    <div class="s-card-num">
+                        <img src="imges/04.png" alt="04">
+                    </div>
+                </div>
+
+                <!-- Card 05 -->
+                <div class="s-card">
+                    <div class="s-card-content">
+                        <h3 class="s-card-title">Content Management</h3>
+                        <p class="s-card-desc">Flexible and easy-to-manage CMS solutions customized for your workflow
+                            and business operations.</p>
+                    </div>
+                    <div class="s-card-num">
+                        <img src="imges/05.png" alt="05">
+                    </div>
+                </div>
+
+                <!-- Card 06 -->
+                <div class="s-card">
+                    <div class="s-card-content">
+                        <h3 class="s-card-title">Cloud & Hosting</h3>
+                        <p class="s-card-desc">Reliable cloud infrastructure and DevOps solutions to ensure stability,
+                            security, and scalable performance.</p>
+                    </div>
+                    <div class="s-card-num">
+                        <img src="imges/06.png" alt="06">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════════════════
+         SECTION 3: WORKFLOW (HOW WE WORK)
+         ═══════════════════════════════════════════ -->
+    <section class="workflow-section" id="workflow">
+        <div class="container">
+            <!-- Header -->
+            <div class="workflow-header">
+                <span class="wf-outline-title">WORK FLOW</span>
+                <h2 class="wf-main-title">HOW WE WORK</h2>
+            </div>
+
+            <!-- Steps -->
+            <div class="workflow-steps">
+
+                <!-- Step 1 -->
+                <div class="wf-step">
+                    <div class="wf-step-top">
+                        <div class="wf-icon-box">
+                            <img src="imges/Frame 2147225476.png" alt="Research" class="wf-icon">
+                        </div>
+                        <div class="wf-divider"></div>
+                        <div class="wf-number">
+                            <img src="imges/01 (1).png" alt="01">
+                        </div>
+                    </div>
+                    <div class="wf-step-bottom">
+                        <h3 class="wf-step-name">Research and Strategy</h3>
+                        <p class="wf-step-desc">Conduct thorough market research of the target audience
+                            behaviors.<br>Submit as many design tasks</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="wf-step">
+                    <div class="wf-step-top">
+                        <div class="wf-icon-box">
+                            <img src="imges/Frame 2147225421 (2).png" alt="Plan" class="wf-icon">
+                        </div>
+                        <div class="wf-divider"></div>
+                        <div class="wf-number">
+                            <img src="imges/02 (1).png" alt="02">
+                        </div>
+                    </div>
+                    <div class="wf-step-bottom">
+                        <h3 class="wf-step-name">Plan Customization</h3>
+                        <p class="wf-step-desc">Conduct thorough market research of the target audience
+                            behaviors.<br>Submit as many design tasks</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="wf-step">
+                    <div class="wf-step-top">
+                        <div class="wf-icon-box">
+                            <img src="imges/Frame 2147225477.png" alt="Finished" class="wf-icon">
+                        </div>
+                        <div class="wf-divider"></div>
+                        <div class="wf-number">
+                            <img src="imges/03 (1).png" alt="03">
+                        </div>
+                    </div>
+                    <div class="wf-step-bottom">
+                        <h3 class="wf-step-name">Finished & User Testing</h3>
+                        <p class="wf-step-desc">Conduct thorough market research of the target audience
+                            behaviors.<br>Submit as many design tasks</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Section Border Animation -->
+        <div class="section-border-anim">
+            <!-- <svg class="section-border-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <rect class="section-border-rect" x="1" y="1" width="98" height="98" />
+            </svg> -->
+        </div>
+    </section>
+    <!-- ═══════════════════════════════════════════
+         SECTION 4: STATS COUNTER
+         ═══════════════════════════════════════════ -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <!-- Stat 1 -->
+                <div class="stat-item">
+                    <div class="stat-number-wrapper">
+                        <span class="stat-number" data-target="150">0</span>+
+                    </div>
+                    <p class="stat-label">Successful Projects Delivered</p>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="stat-item">
+                    <div class="stat-number-wrapper">
+                        <span class="stat-number" data-target="100">0</span>%
+                    </div>
+                    <p class="stat-label">Client Satisfaction Rate</p>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="stat-item">
+                    <div class="stat-number-wrapper">
+                        <span class="stat-number" data-target="50">0</span>+
+                    </div>
+                    <p class="stat-label">Satisfied Clients Worldwide</p>
+                </div>
+
+                <!-- Stat 4 -->
+                <div class="stat-item">
+                    <div class="stat-number-wrapper">
+                        <span class="stat-number" data-target="24">0</span>/<span class="stat-number"
+                            data-target="7">0</span>
+                    </div>
+                    <p class="stat-label">Always Available to Support You</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════════════════
+         SECTION 7: TRANSFORM (OLD SECTION 6) ─ Renumbered for clarity
+         ═══════════════════════════════════════════ -->
+    <section class="transform-section">
+        <div class="transform-overlay"></div>
+        <div class="container transform-container">
+            <div class="transform-content">
+                <h2 class="transform-title">Transform Your Ideas Into<br>Digital Success</h2>
+                <p class="transform-subtitle">
+                    From websites and mobile apps to cloud solutions and e-commerce platforms, Ezdhar<br>
+                    helps businesses build powerful digital products that drive growth and innovation.
+                </p>
+                <div class="transform-btn-wrap">
+                    <a href="#contact" class="transform-btn">Book A Free Consultation</a>
+                </div>
+            </div>
+        </div>
+        <!-- Section Border Animation -->
+        <div class="section-border-anim">
+            <svg class="section-border-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <rect class="section-border-rect" x="1" y="1" width="98" height="98" />
+            </svg>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════════════════
+         SECTION 7: WHY CHOOSE EZDHAR
+         ═══════════════════════════════════════════ -->
+    <section class="why-section" id="why-us">
+        <div class="container">
+            <!-- Header -->
+            <div class="why-header">
+                <span class="why-outline-title">WHY US ?</span>
+                <h2 class="why-main-title">Why Choose Ezdhar?</h2>
+                <p class="why-subtitle">Ezdhar delivers innovative digital solutions with a focus on quality,
+                    performance, and user experience. We help businesses turn ideas into scalable and successful digital
+                    products.</p>
+            </div>
+
+            <!-- Grid -->
+            <div class="why-grid">
+
+                <!-- Left Column -->
+                <div class="why-col why-col--left">
+                    <div class="why-card">
+                        <div class="why-card-icon"><img src="imges/image 40.png" alt="Scalable Solutions"></div>
+                        <h3 class="why-card-title">Scalable Solutions</h3>
+                        <p class="why-card-desc">Our systems are designed to grow with your business.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-card-icon"><img src="imges/image 42.png" alt="Dedicated Support"></div>
+                        <h3 class="why-card-title">Dedicated Support</h3>
+                        <p class="why-card-desc">We provide continuous support and long-term partnership.</p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="why-col why-col--right">
+                    <div class="why-card">
+                        <div class="why-card-icon"><img src="imges/image 39.png" alt="Creative Designs"></div>
+                        <h3 class="why-card-title">Creative & Modern Designs</h3>
+                        <p class="why-card-desc">We build visually engaging products with clean modern interfaces.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-card-icon"><img src="imges/image 41.png" alt="Fast Performance"></div>
+                        <h3 class="why-card-title">Fast Performance</h3>
+                        <p class="why-card-desc">Optimized speed and performance across all platforms.</p>
+                    </div>
+                    <div class="why-card why-card--last">
+                        <div class="why-card-icon"><img src="imges/image 43.png" alt="Business-Focused Approach"></div>
+                        <h3 class="why-card-title">Business-Focused Approach</h3>
+                        <p class="why-card-desc">Every solution is built to help you achieve measurable business goals.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Removed section-wide border animation as requested -->
+    </section>
+
+    <!-- Footer same as index.html -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <!-- Top CTA Row -->
+            <div class="footer-cta">
+                <h2 class="footer-cta-title">
+                    Discover how Ezdhar can help you build <span class="muted-text">innovative digital solutions that
+                        accelerate growth.</span>
+                </h2>
+                <div class="footer-cta-action">
+                    <a href="#" class="btn-demo">
+                        Book A Demo
+                        <span class="arrow-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main Links Grid -->
+            <div class="footer-grid">
+                <div class="f-col branding-col">
+                    <h3 class="f-heading">EZDHAR</h3>
+                    <p class="f-text">
+                        Delivering innovative web, mobile, cloud, and e-commerce solutions that help businesses grow,
+                        scale, and succeed in the digital world.
+                    </p>
+                </div>
+                <div class="f-col links-col">
+                    <h3 class="f-heading">Quick Links</h3>
+                    <ul class="f-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="f-col contact-col">
+                    <h3 class="f-heading">Get In Touch</h3>
+                    <ul class="f-contact-list">
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:info@ezzdhar.com">info@ezzdhar.com</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:+201227790014">+20 12 27790014</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            <span>Cairo, Egypt, New Damietta</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© 2026 Ezdhar Company. All Rights Reserved.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><img src="imges/Group (25).png" alt=""></a>
+                    <a href="#"><img src="imges/Group (24).png" alt=""></a>
+                    <a href="#"><img src="imges/Group (23).png" alt=""></a>
+                    <a href="#"><img src="imges/Group (26).png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero Content Animation
+        gsap.from(".sh-title", {
+            y: 40,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out",
+            delay: 0.5
+        });
+
+        gsap.from(".sh-description", {
+            y: 30,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out",
+            delay: 0.8
+        });
+
+        // Sequential Pulse Animation for cards
+        const sCards = gsap.utils.toArray('.s-card');
+        const sTimeline = gsap.timeline({
+            repeat: -1,
+            scrollTrigger: {
+                trigger: ".services-grid",
+                start: "top 70%"
+            }
+        });
+
+        sCards.forEach((card) => {
+            sTimeline.to(card, {
+                onStart: () => card.classList.add('active-pulse'),
+                duration: 1.5,
+                onComplete: () => card.classList.remove('active-pulse')
+            }, "+=0.3");
+        });
+
+        // Workflow Section Animation
+        gsap.to(".wf-step", {
+            scrollTrigger: {
+                trigger: ".workflow-section",
+                start: "top 70%",
+            },
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out"
+        });
+
+        // Stats Counter Animation
+        const statNumbers = document.querySelectorAll('.stat-number');
+        statNumbers.forEach(num => {
+            const target = parseInt(num.getAttribute('data-target'));
+            gsap.to(num, {
+                innerText: target,
+                duration: 2.5,
+                snap: { innerText: 1 },
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".stats-section",
+                    start: "top 80%",
+                }
+            });
+        });
+
+        /* ── why-section Sequential Card Pulse ── */
+        const whyCards = gsap.utils.toArray('.why-card');
+        const whyTimeline = gsap.timeline({
+            repeat: -1,
+            scrollTrigger: {
+                trigger: '.why-section',
+                start: 'top 60%',
+            }
+        });
+
+        whyCards.forEach((card, index) => {
+            whyTimeline.to(card, {
+                onStart: () => card.classList.add('card-active'),
+                duration: 2,
+                onComplete: () => {
+                    card.classList.remove('card-active');
+                }
+            }, "+=0.2");
+        });
+
+        /* ── why-section Entrance Animations ── */
+        gsap.from(".why-header", {
+            scrollTrigger: { trigger: ".why-section", start: "top 75%" },
+            opacity: 0, y: 40, duration: 1, ease: "power3.out"
+        });
+
+        gsap.from(".why-card", {
+            scrollTrigger: {
+                trigger: ".why-grid",
+                start: "top 85%"
+            },
+            opacity: 0,
+            y: 40,
+            duration: 1,
+            stagger: 0.3,
+            ease: "power2.out"
+        });
+
+        // ── Floating Stars & Arrows Generation ──
+        const particleContainer = document.querySelector('.services-hero');
+
+        // ── Canvas Starfield (Arqqa Style) ──
+        const canvas = document.getElementById('heroCanvas');
+        const ctx = canvas.getContext('2d');
+        let w, h, stars = [];
+
+        function setCanvasSize() {
+            w = canvas.width = window.innerWidth;
+            h = canvas.height = window.innerHeight;
+        }
+
+        class Star {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = (Math.random() - 0.5) * w;
+                this.y = (Math.random() - 0.5) * h;
+                this.z = Math.random() * w;
+                this.pz = this.z;
+            }
+            update() {
+                this.z -= 4; // Speed
+                if (this.z <= 0) this.reset();
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.strokeStyle = 'rgba(172, 127, 94, 0.8)'; // Brighter Accent color
+                ctx.lineWidth = 3;
+                ctx.lineCap = 'round';
+                ctx.shadowBlur = 10;
+                ctx.shadowColor = 'rgba(172, 127, 94, 0.5)';
+
+                let x = this.x / this.z * w + w / 2;
+                let y = this.y / this.z * h + h / 2;
+                let px = this.x / this.pz * w + w / 2;
+                let py = this.y / this.pz * h + h / 2;
+
+                ctx.moveTo(px, py);
+                ctx.lineTo(x, y);
+                ctx.stroke();
+                this.pz = this.z;
+            }
+        }
+
+        function initStars() {
+            setCanvasSize();
+            stars = [];
+            for (let i = 0; i < 800; i++) stars.push(new Star());
+        }
+
+        function animateCanvas() {
+            ctx.clearRect(0, 0, w, h);
+            stars.forEach(s => { s.update(); s.draw(); });
+            requestAnimationFrame(animateCanvas);
+        }
+
+        initStars();
+        animateCanvas();
+        window.addEventListener('resize', initStars);
+
+        /* ── Professional Mobile Sidebar Menu Logic ── */
+        const menuToggle = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        menuToggle.addEventListener('click', () => {
+            mobileOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+
+        const hideMenu = () => {
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        closeMenu.addEventListener('click', hideMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', hideMenu));
+
+
+    </script>
+</body>
+
+</html>

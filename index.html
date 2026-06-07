@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ezdhar - Build Digital Products That Drive Growth</title>
+    <title>Ezdhar</title>
     <meta name="description"
         content="Ezdhar delivers modern digital solutions designed to help startups, businesses, and brands grow faster in the digital world.">
     <link rel="stylesheet" href="style.css">
@@ -21,6 +21,19 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="preloader-bg-left preloader-bg-panel"></div>
+        <div class="preloader-bg-right preloader-bg-panel"></div>
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="imges/logo1.png" alt="Ezdhar Logo">
+            </div>
+            <p class="preloader-text">Growing Businesses. Building Futures.</p>
+            <div class="preloader-bar-container">
+                <div class="preloader-bar"></div>
+            </div>
+        </div>
+    </div>
     <!-- bg-circles moved to the end -->
 
     <header class="navbar">
@@ -63,9 +76,10 @@
         </nav>
         <div class="overlay-footer">
             <div class="social-links">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/people/Ezdhar-Company/61570581791821/"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://x.com/ezdhar__1"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.instagram.com/ezzdhar"><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
             <p>© 2026 Ezdhar Company</p>
@@ -398,30 +412,6 @@
         <!-- Removed section-wide border animation as requested -->
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- ═══════════════════════════════════════════
          SECTION 6: OUR TEAM (MEET EXPERTS)
          ═══════════════════════════════════════════ -->
@@ -504,11 +494,6 @@
         </div>
     </section>
 
-
-
-
-
-
     <!-- Bottom Divider -->
     <div class="services-divider"></div>
 
@@ -552,9 +537,9 @@
                 <div class="f-col links-col">
                     <h3 class="f-heading">Quick Links</h3>
                     <ul class="f-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#services">Our Services</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -584,10 +569,13 @@
                     <p>© 2026 Ezdhar Company. All Rights Reserved.</p>
                 </div>
                 <div class="social-links">
-                    <a href="#"><img src="imges/Group (25).png" alt=""></a>
+                    <a href="https://www.facebook.com/people/Ezdhar-Company/61570581791821/" target="_blank"><img
+                            src="imges/Group (25).png" alt=""></a>
                     <a href="#"><img src="imges/Group (24).png" alt=""></a>
-                    <a href="#"><img src="imges/Group (23).png" alt=""></a>
-                    <a href="#"><img src="imges/Group (26).png" alt=""></a>
+                    <a href="https://api.whatsapp.com/send?phone=201227790014" target="_blank"><img
+                            src="imges/Group (23).png" alt=""></a>
+                    <a href="https://www.youtube.com/@ezdharcompany" target="_blank"><img src="imges/Group (26).png"
+                            alt=""></a>
                 </div>
             </div>
 
@@ -596,6 +584,19 @@
 
 
     <script>
+        /* ── Premium Preloader Animation ── */
+        const preloaderTL = gsap.timeline();
+
+        preloaderTL
+            .to(".preloader-logo", { opacity: 1, y: 0, duration: 1, ease: "power4.out" })
+            .to(".preloader-text", { opacity: 1, y: 0, duration: 1, ease: "power4.out" }, "-=0.6")
+            .to(".preloader-bar-container", { opacity: 1, duration: 0.5 }, "-=0.6")
+            .to(".preloader-bar", { width: "100%", duration: 2, ease: "power2.inOut" })
+            .to(".preloader-content", { y: -50, opacity: 0, duration: 0.8, ease: "power4.in" })
+            .to(".preloader-bg-left", { xPercent: -100, duration: 1.2, ease: "expo.inOut" }, "-=0.4")
+            .to(".preloader-bg-right", { xPercent: 100, duration: 1.2, ease: "expo.inOut" }, "<")
+            .set("body", { overflowY: "auto" })
+            .set(".preloader", { display: "none" });
         /* ── Professional Mobile Sidebar Menu Logic ── */
         const menuToggle = document.getElementById('menuToggle');
         const closeMenu = document.getElementById('closeMenu');
@@ -1198,8 +1199,8 @@
 
         /* ── bg-circles Visibility Management ── */
         const updateOrbs = (isActive) => {
-            gsap.to(".bg-circles", { 
-                opacity: isActive ? 1 : 0, 
+            gsap.to(".bg-circles", {
+                opacity: isActive ? 1 : 0,
                 duration: 0.8,
                 display: isActive ? 'block' : 'none'
             });

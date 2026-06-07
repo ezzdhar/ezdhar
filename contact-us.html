@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Ezdhar</title>
+    <title>Ezdhar</title>
     <meta name="description"
         content="Explore the wide range of digital solutions provided by Ezdhar, from web development to mobile apps and cloud services.">
     <link rel="stylesheet" href="style.css">
@@ -26,9 +26,11 @@
             animation: none !important;
             transform: none !important;
         }
+
         .white-title {
             color: #FFFFFF !important;
         }
+
         .contact-hero::after {
             background: radial-gradient(circle at center, rgba(116, 81, 53, 0.4) 0%, transparent 70%) !important;
             z-index: 2;
@@ -37,6 +39,19 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="preloader-bg-left preloader-bg-panel"></div>
+        <div class="preloader-bg-right preloader-bg-panel"></div>
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="imges/logo1.png" alt="Ezdhar Logo">
+            </div>
+            <p class="preloader-text">Growing Businesses. Building Futures.</p>
+            <div class="preloader-bar-container">
+                <div class="preloader-bar"></div>
+            </div>
+        </div>
+    </div>
     <header class="navbar">
         <div class="container navbar-content">
             <div class="logo">
@@ -49,7 +64,7 @@
             </nav>
             <div class="nav-actions">
                 <div class="vertical-divider"></div>
-                <a href="#" class="btn btn-outline">Get A Free Quote</a>
+                <a href="contact-us.html" class="btn btn-outline">Get A Free Quote</a>
             </div>
             <div class="mobile-menu-toggle" id="menuToggle">
                 <span></span>
@@ -73,13 +88,14 @@
             <a href="index.html" class="mobile-nav-link">Home</a>
             <a href="services.html" class="mobile-nav-link">Our Services</a>
             <a href="contact-us.html" class="mobile-nav-link">Contact Us</a>
-            <a href="#" class="mobile-nav-link quote-btn">Get A Free Quote</a>
+            <a href="contact-us.html" class="mobile-nav-link quote-btn">Get A Free Quote</a>
         </nav>
         <div class="overlay-footer">
             <div class="social-links">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/people/Ezdhar-Company/61570581791821/"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://x.com/ezdhar__1"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.instagram.com/ezzdhar"><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
             <p>© 2026 Ezdhar Company</p>
@@ -114,7 +130,8 @@
                 </div>
                 <div class="cta-footer">
                     <p class="cta-desc">
-                        Whether you need a website, mobile app, e-commerce platform, or cloud solution, our team is here to help. <br>
+                        Whether you need a website, mobile app, e-commerce platform, or cloud solution, our team is here
+                        to help. <br>
                         Reach out today and let's discuss how Ezdhar can bring your vision to life.
                     </p>
                 </div>
@@ -130,7 +147,7 @@
     <section class="contact-main-section">
         <div class="container">
             <div class="contact-grid">
-                
+
                 <!-- Left: Info Cards -->
                 <div class="contact-info-list" id="contact-info-list">
                     <!-- Call Us -->
@@ -193,11 +210,13 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label>F - Name</label>
-                                <input type="text" name="first_name" class="form-control" placeholder="F - Name" required>
+                                <input type="text" name="first_name" class="form-control" placeholder="F - Name"
+                                    required>
                             </div>
                             <div class="form-group">
                                 <label>L - Name</label>
-                                <input type="text" name="last_name" class="form-control" placeholder="L - Name" required>
+                                <input type="text" name="last_name" class="form-control" placeholder="L - Name"
+                                    required>
                             </div>
                         </div>
 
@@ -210,7 +229,8 @@
                         <!-- Email Address -->
                         <div class="form-group">
                             <label>Email Address</label>
-                            <input type="email" name="_replyto" class="form-control" placeholder="Email Address" required>
+                            <input type="email" name="_replyto" class="form-control" placeholder="Email Address"
+                                required>
                         </div>
 
                         <!-- Service Type -->
@@ -230,7 +250,8 @@
                         <!-- Describe Request -->
                         <div class="form-group">
                             <label>Describe Your Request</label>
-                            <textarea name="message" class="form-control" placeholder="Describe Your Request"></textarea>
+                            <textarea name="message" class="form-control"
+                                placeholder="Describe Your Request"></textarea>
                         </div>
 
                         <!-- Hidden email to field for Formspree if using generic endpoint -->
@@ -375,10 +396,13 @@
                     <p>© 2026 Ezdhar Company. All Rights Reserved.</p>
                 </div>
                 <div class="social-links">
-                    <a href="#"><img src="imges/Group (25).png" alt=""></a>
+                    <a href="https://www.facebook.com/people/Ezdhar-Company/61570581791821/" target="_blank"><img
+                            src="imges/Group (25).png" alt=""></a>
                     <a href="#"><img src="imges/Group (24).png" alt=""></a>
-                    <a href="#"><img src="imges/Group (23).png" alt=""></a>
-                    <a href="#"><img src="imges/Group (26).png" alt=""></a>
+                    <a href="https://api.whatsapp.com/send?phone=201227790014" target="_blank"><img
+                            src="imges/Group (23).png" alt=""></a>
+                    <a href="https://www.youtube.com/@ezdharcompany" target="_blank"><img src="imges/Group (26).png"
+                            alt=""></a>
                 </div>
             </div>
         </div>
@@ -386,6 +410,19 @@
 
     <script>
         gsap.registerPlugin(ScrollTrigger);
+        /* ── Premium Preloader Animation ── */
+        const preloaderTL = gsap.timeline();
+
+        preloaderTL
+            .to(".preloader-logo", { opacity: 1, y: 0, duration: 1, ease: "power4.out" })
+            .to(".preloader-text", { opacity: 1, y: 0, duration: 1, ease: "power4.out" }, "-=0.6")
+            .to(".preloader-bar-container", { opacity: 1, duration: 0.5 }, "-=0.6")
+            .to(".preloader-bar", { width: "100%", duration: 2, ease: "power2.inOut" })
+            .to(".preloader-content", { y: -50, opacity: 0, duration: 0.8, ease: "power4.in" })
+            .to(".preloader-bg-left", { xPercent: -100, duration: 1.2, ease: "expo.inOut" }, "-=0.4")
+            .to(".preloader-bg-right", { xPercent: 100, duration: 1.2, ease: "expo.inOut" }, "<")
+            .set("body", { overflowY: "auto" })
+            .set(".preloader", { display: "none" });
 
         // Hero Content Animation
         gsap.from(".sh-title", {
@@ -440,7 +477,7 @@
                 opacity: Math.random() * 0.5
             });
             ctaParticles.appendChild(particle);
-            
+
             // Subtle movement for particles
             // Subtle movement for particles
             gsap.to(particle, {

@@ -20,7 +20,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
 </head>
 
-<body>
+<body style="overflow-y: hidden;">
+
     <div class="preloader">
         <div class="preloader-bg-left preloader-bg-panel"></div>
         <div class="preloader-bg-right preloader-bg-panel"></div>
@@ -88,6 +89,16 @@
 
 
     <section class="hero">
+        <!-- Spotlight Orbs — contained inside hero -->
+        <div class="bg-circles">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="orb orb-4"></div>
+            <div class="orb orb-5"></div>
+        </div>
+        <!-- Hero Stars -->
+        <div class="hero-stars" id="heroStarsCanvas"></div>
         <div class="container hero-content">
             <h1 class="hero-title">Build Digital Products That Drive Growth</h1>
             <p class="hero-description">
@@ -158,7 +169,7 @@
 
             <!-- Hexagons / Circles Graphic Area -->
             <div class="srv-graphic">
-                <img src="imges/Group 6356199 (2).png" alt="Services" class="srv-circles-img">
+                <img src="imges/Group 6356206 (1).png" alt="Services" class="srv-circles-img">
             </div>
         </div>
     </section>
@@ -175,7 +186,7 @@
                 <p class="cta-subtitle">We Shift You From Todays Reality To Tomorrows Potential, Ensuring</p>
             </div>
             <div class="cta-action">
-                <a href="#" class="cta-circle-btn">
+                <a href="contact-us.html" class="cta-circle-btn">
                     <div class="cta-btn-inner">
                         <span class="cta-btn-text">Lets Talk <i class="bi bi-arrow-up-right"></i></span>
                     </div>
@@ -316,7 +327,7 @@
                     Business <span class="cs-outline">Growth</span>
                 </h2>
                 <div class="cs-btn-wrap">
-                    <a href="#services" class="cs-btn">Explore Services</a>
+                    <a href="services.html" class="cs-btn">Explore Services</a>
                 </div>
             </div>
 
@@ -344,7 +355,7 @@
                     helps businesses build powerful digital products that drive growth and innovation.
                 </p>
                 <div class="transform-btn-wrap">
-                    <a href="#contact" class="transform-btn">Book A Free Consultation</a>
+                    <a href="contact-us.html" class="transform-btn">Book A Free Consultation</a>
                 </div>
             </div>
         </div>
@@ -510,7 +521,7 @@
                         accelerate growth.</span>
                 </h2>
                 <div class="footer-cta-action">
-                    <a href="#" class="btn-demo">
+                    <a href="contact-us.html" class="btn-demo">
                         Book A Demo
                         <span class="arrow-icon">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -638,37 +649,81 @@
         /* ── GSAP Animations ── */
         gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
-        // Section 2 Circle Animation: Move from right to left
+        /* ── Hero Stars Generator ── */
+        (function () {
+            const canvas = document.getElementById('heroStarsCanvas');
+            if (!canvas) return;
+
+            const STAR_COUNT = 120;
+            // Mix of white and warm gold to match the brand palette
+            const COLORS = ['#ffffff', '#ffffff', '#ffffff', '#fff8e7', '#c49070', '#AC7F5E'];
+
+            for (let i = 0; i < STAR_COUNT; i++) {
+                const star = document.createElement('div');
+                star.className = 'hero-star';
+
+                // Random position
+                star.style.left = (Math.random() * 100) + '%';
+                star.style.top  = (Math.random() * 100) + '%';
+
+                // Random size: 1px (tiny) to 3px (medium)
+                const size = (0.8 + Math.random() * 2.4).toFixed(1) + 'px';
+                star.style.width  = size;
+                star.style.height = size;
+
+                // Random color
+                star.style.background = COLORS[Math.floor(Math.random() * COLORS.length)];
+
+                // Drift direction & distance
+                const driftX = ((Math.random() - 0.5) * 60).toFixed(0) + 'px';
+                const driftY = ((Math.random() - 0.5) * 60).toFixed(0) + 'px';
+                star.style.setProperty('--dx', driftX);
+                star.style.setProperty('--dy', driftY);
+
+                // Twinkle speed: 1.5s – 4.5s
+                star.style.setProperty('--twinkle-dur',   (1.5 + Math.random() * 3).toFixed(2) + 's');
+                star.style.setProperty('--twinkle-delay', (Math.random() * 5).toFixed(2) + 's');
+
+                // Drift speed: 6s – 16s
+                star.style.setProperty('--drift-dur',   (6 + Math.random() * 10).toFixed(2) + 's');
+                star.style.setProperty('--drift-delay', (Math.random() * 8).toFixed(2) + 's');
+
+                // Add optional soft glow to larger stars
+                if (parseFloat(size) > 2) {
+                    star.style.boxShadow = `0 0 ${(Math.random() * 4 + 2).toFixed(0)}px currentColor`;
+                    star.style.color = star.style.background;
+                }
+
+                canvas.appendChild(star);
+            }
+        })();
+
+
+        // ── tp-vector-wrapper: Slide in from right → settle on left ──
         gsap.fromTo(".tp-vector-wrapper",
-            {
-                x: "100vw",
-                opacity: 0,
-                rotate: 180
-            },
+            { x: "120vw", opacity: 1 },
             {
                 x: 0,
-                opacity: 1,
-                rotate: 0,
                 duration: 2,
-                ease: "power4.out",
+                ease: "power3.out",
                 scrollTrigger: {
                     trigger: ".tech-partners",
-                    start: "top 80%",
-                    toggleActions: "play none none none"
+                    start: "top 75%",
+                    once: true
                 },
                 onComplete: () => {
-                    // Continuous professional pulse animation
-                    gsap.to(".tp-vector-img", {
-                        scale: 1.05,
-                        duration: 2,
+                    // Continuous float after arrival
+                    gsap.to(".tp-vector-circle", {
+                        y: "-=15",
+                        duration: 3,
                         repeat: -1,
                         yoyo: true,
                         ease: "sine.inOut"
                     });
-                    // Subtle floating movement
-                    gsap.to(".tp-vector-circle", {
-                        y: "-=15",
-                        duration: 3,
+                    // Continuous pulse after arrival
+                    gsap.to(".tp-vector-img", {
+                        scale: 1.05,
+                        duration: 2,
                         repeat: -1,
                         yoyo: true,
                         ease: "sine.inOut"
@@ -1084,7 +1139,7 @@
 
         // Navigation
         document.getElementById("teamNext").addEventListener("click", () => teamLoop.next({ duration: 1, ease: "power2.inOut" }));
-        document.getElementById("teamPrev").addEventListener("click", () => teamLoop.previous({ duration: 1, ease: "power2.inOut" }));
+        document.getElementById("teamPrev").addEventListener("click", () => teamLoop.prev({ duration: 1, ease: "power2.inOut" }));
 
         // Update active class on transition complete (Subtle touch)
         teamLoop.eventCallback("onUpdate", () => {
@@ -1197,68 +1252,10 @@
             onLeaveBack: () => whyTimeline.pause()
         });
 
-        /* ── bg-circles Visibility Management ── */
-        const updateOrbs = (isActive) => {
-            gsap.to(".bg-circles", {
-                opacity: isActive ? 1 : 0,
-                duration: 0.8,
-                display: isActive ? 'block' : 'none'
-            });
-        };
-
-        // Initially show orbs if in Hero or Services
-        const checkInitialVisibility = () => {
-            const hero = document.querySelector('.hero');
-            const services = document.querySelector('.services-section');
-            if (ScrollTrigger.isInViewport(hero) || ScrollTrigger.isInViewport(services)) {
-                updateOrbs(true);
-            } else {
-                updateOrbs(false);
-            }
-        };
-
-        // Show in Hero
-        ScrollTrigger.create({
-            trigger: ".hero",
-            start: "top top",
-            end: "bottom center",
-            onEnter: () => updateOrbs(true),
-            onEnterBack: () => updateOrbs(true),
-            onLeave: () => {
-                if (!ScrollTrigger.isInViewport(".services-section")) updateOrbs(false);
-            },
-            onLeaveBack: () => {
-                if (!ScrollTrigger.isInViewport(".services-section")) updateOrbs(false);
-            }
-        });
-
-        // Show in Services Section
-        ScrollTrigger.create({
-            trigger: ".services-section",
-            start: "top center",
-            end: "bottom center",
-            onEnter: () => updateOrbs(true),
-            onEnterBack: () => updateOrbs(true),
-            onLeave: () => {
-                if (!ScrollTrigger.isInViewport(".hero")) updateOrbs(false);
-            },
-            onLeaveBack: () => {
-                if (!ScrollTrigger.isInViewport(".hero")) updateOrbs(false);
-            }
-        });
-
         window.addEventListener('load', () => {
             initMarquee();
-            checkInitialVisibility();
         });
     </script>
-    <div class="bg-circles">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-        <div class="orb orb-4"></div>
-        <div class="orb orb-5"></div>
-    </div>
 </body>
 
 

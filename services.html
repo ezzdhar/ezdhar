@@ -20,19 +20,7 @@
 </head>
 
 <body>
-    <div class="preloader">
-        <div class="preloader-bg-left preloader-bg-panel"></div>
-        <div class="preloader-bg-right preloader-bg-panel"></div>
-        <div class="preloader-content">
-            <div class="preloader-logo">
-                <img src="imges/logo1.png" alt="Ezdhar Logo">
-            </div>
-            <p class="preloader-text">Growing Businesses. Building Futures.</p>
-            <div class="preloader-bar-container">
-                <div class="preloader-bar"></div>
-            </div>
-        </div>
-    </div>
+
     <header class="navbar">
         <div class="container navbar-content">
             <div class="logo">
@@ -389,7 +377,7 @@
                         accelerate growth.</span>
                 </h2>
                 <div class="footer-cta-action">
-                    <a href="#" class="btn-demo">
+                    <a href="contact-us.html" class="btn-demo">
                         Book A Demo
                         <span class="arrow-icon">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -456,19 +444,7 @@
 
     <script>
         gsap.registerPlugin(ScrollTrigger);
-        /* ── Premium Preloader Animation ── */
-        const preloaderTL = gsap.timeline();
 
-        preloaderTL
-            .to(".preloader-logo", { opacity: 1, y: 0, duration: 1, ease: "power4.out" })
-            .to(".preloader-text", { opacity: 1, y: 0, duration: 1, ease: "power4.out" }, "-=0.6")
-            .to(".preloader-bar-container", { opacity: 1, duration: 0.5 }, "-=0.6")
-            .to(".preloader-bar", { width: "100%", duration: 2, ease: "power2.inOut" })
-            .to(".preloader-content", { y: -50, opacity: 0, duration: 0.8, ease: "power4.in" })
-            .to(".preloader-bg-left", { xPercent: -100, duration: 1.2, ease: "expo.inOut" }, "-=0.4")
-            .to(".preloader-bg-right", { xPercent: 100, duration: 1.2, ease: "expo.inOut" }, "<")
-            .set("body", { overflowY: "auto" })
-            .set(".preloader", { display: "none" });
 
         // Hero Content Animation
         gsap.from(".sh-title", {

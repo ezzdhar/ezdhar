@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ezzdhar.com/sitemap.xml
